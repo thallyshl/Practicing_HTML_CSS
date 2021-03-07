@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <title>Challenge 01</title>
+    <style>
+        body {
+            margin-top: 20px;
+            background-color: aliceblue;
+            color: rgb(0, 0, 0);
+            font: normal 15pt Arial;
+            margin-left: 20px;
+            margin-right: 650;
+        }
+        p#final {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id='pagina'>
+        <h1>Desafio do mapa mundi</h1>
+        <p>Desafio que consiste em montar o mapa mundi com nove imagens diferente.</p>
+        <p>Vai dar certo! &#x1F60E </p>
+        <h2>Mapa mundi:</h2>
+        <img src="Imagens/mapa03.png" alt="parte do mapa mundi">
+        <img src="Imagens/mapa07.png" alt="parte do mapa mundi">
+        <img src="Imagens/mapa05.png" alt="parte do mapa mundi"><br>
+        <img src="Imagens/mapa09.png" alt="parte do mapa mundi">
+        <img src="Imagens/mapa01.png" alt="parte do mapa mundi">
+        <img src="Imagens/mapa08.png" alt="parte do mapa mundi"><br>
+        <img src="Imagens/mapa06.png" alt="parte do mapa mundi">
+        <img src="Imagens/mapa02.png" alt="parte do mapa mundi">
+        <img src="Imagens/mapa04.png" alt="parte do mapa mundi"><br>
+        <input type="button" value="Dark Mode" onclick ="clicar()">
+        <input type="button" value="White Mode" onclick='clicarWM()'>
+        <p id="final"><strong><a href="index.html" target="_self" rel="prev">&#x21E6 Página principal </a></strong></p>
+    </div>
+
+    <script>
+        var divblack = document.getElementById('pagina')
+        var divwhite = document.getElementById('pagina')
+        var lista = document.getElementById('list')
+        function clicar() {
+            divblack.style.background = 'black'
+            divblack.style.color = 'white'
+            lista.style.color = 'white'
+        }
+        function clicarWM() {
+            divblack.style.background = null
+            divblack.style.color = 'black'
+            lista.style.color = ('black')
+        }
+    </script>
+
+</body>
+</html>
