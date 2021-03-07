@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags code and quote.</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font: normal 20pt Arial;
+            background: rgb(44, 0, 70);
+            color: white;
+        }
+        ol {
+            line-height: 40px;
+        }
+        div#flex-cont {
+            display: flex;
+        }
+        #flex-cont>div {
+            background: white;
+            color:  rgb(44, 0, 70);
+            width: 650px;
+            box-sizing: border-box;
+        }
+        div#orderlist {
+            height: 930px;
+        }
+        div#unorderlist {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Source code</h1>
+    <p>Tag &lt;code&gt;&lt;/code&gt; is used when we write a code like <code>document.getElementById</code></p>
+    <p>For write abbreviation I use tag <mark style="background: rgb(25, 255, 25);">&lt;abbr&gt;<abbr title="abbreviation">ABBR</abbr>&lt;/abbr&gt;</mark></p>
+    <div id=flex-cont>
+        <div id=orderlist>
+            <h2>Lista com ordenação.</h2>
+            <ol type="1">
+                <li>h1 – h6> Título do texto /h1>
+                <li>p> Parágrafos/p>
+                <li>br> quebra de linha
+                <li>hr> Linha horizontal
+                <li>Dentro de paragrafo &nomedoemoji
+                <li>img src=”nomedaimagemnoarquivo” alt=”nomequeapaginavaileraimagem”>
+                <li>strong> Negrito /strong>
+                <li>em> Itálico /em>
+                <li>mark (opcional adicionar um style=“background-color: para trocar a cor> Marca texto /mark>
+                <li>big> Texto grande /big>
+                <li>small> Texto menor /small>
+                <li>del> Texto assim /del>
+                <li>ins> Texto inserido /ins>
+                <li>sup> superior /sup>
+                <li>sub> subscrito /sub>
+                <li>code> Escrever código /code>
+                <li>abbr=“significado”> Abreviação /abbr>
+                <li>ol type=”” start> Lista ordenada li>coisas das listas /ol>
+            </ol>
+        </div>
+        <div id="unorderlist">
+            <h2>Colocar uma lista sem ordenação.</h2>
+            <ul type="square">
+                <li>Lista desordenada</li>
+                <li>Sem ordem, com marcação</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+div#flex-cont {
+    display: flex;
+}
+#flex-cont>div {
+    width: 33%;
+    height: 150px;
+    font: normal 20px Arial;
+    text-align: center;
+}
+div#firstdiv {
+    background-color: green;
+    color: white;
+}
+div#seconddiv {
+    background: white;
+    color: green
+}
+div#thirddiv {
+    background-color: green;
+    color: white;

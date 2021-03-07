@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images for exercises/favicon.ico" type="image/x-icon">
+    <title>Learning to add strong and italic letter.</title>
+    <style>
+        body {
+            color: blanchedalmond;
+            background: black;
+            text-align: left;
+            font: normal 20pt Arial;
+
+        }
+        #borda {
+            border: 5px solid;
+            padding: 10px;
+            border-width: 2px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Strong and italic form!</h1>
+    <p>For input strong letters you don't use &lt;b&gt;. Today we use <strong>&lt;strong&gt;</strong>.</p>
+    <p>The same way, we don't use more &lt;I&gt; para italic, we use <em>&lt;em&gt;</em></p>
+    <p>I can mark text with tag <mark>&lt;mark&gt</mark>; and for change color mark I can use a style like a parameter <mark style="background-color: blue;">in here!</mark></p>
+    <p id="borda">border test</p>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+        console.log(p1)
+
+    </script>
+</body>
+</html>
