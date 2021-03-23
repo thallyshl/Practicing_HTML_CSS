@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_principal.css">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <title>Challenge 03</title>
+    <style>
+        a#alinhar {
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body id='teste'>
+    <div id=pagina>
+        <h1>Onde comecei a aprender programação</h1>
+        <p>Agradecimento especial ao professor Gustavo Guanabara, dono do site <a href="https://www.cursoemvideo.com/" target="_blank" rel="external"></a> com vários cursos grátis e uma didática excelente.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?start=7" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe><br>
+        <input type="button" value="Dark Mode" id="Darkmode" onclick="clicar()">
+        <input type="button" value="White Mode" id="Whitemode" onclick="clicarWM()">
+        <p id=final><a href="index.html" target="_self" rel="prev"><strong>&#x21E6 Página principal</strong></a> <a id=alinhar href="page_courses.html" target="_self" rel="next"><strong>Cursos sugeridos</strong></a></p>
+    </div>
+    <script>
+        var teste = document.getElementById('teste')   
+        function clicar() {
+            teste.style.background = 'black'
+            teste.style.color="white"
+        }
+        function clicarWM() {
+            teste.style.background = 'aliceblue'
+            teste.style.color='black'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    color: black;
+    font: normal 15pt Arial;
+    margin-left: 1%;
+}
+p#final {
+    margin-top: 30px;
+    }
+#all {
+    background-color: aliceblue;
+    color: black;
+    font: normal 15pt Arial;
+    margin: 0px;
+}
+div#container {
+    block-size: 100%;
+    background-color: null;
+}

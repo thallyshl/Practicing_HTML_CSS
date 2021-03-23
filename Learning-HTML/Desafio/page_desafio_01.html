@@ -5,33 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_principal.css">
     <title>Challenge 02</title>
     <style>
-        body {
-            text-align: justify;
-            margin-top: 20px;
-            background-color: aliceblue;
-            color: black;
-            font: normal 15pt Arial;
-        }
-        div#pagina {
-            background-color: null;
-            width: 700px;
-        }
-        h1, h2, p {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        img {
-            margin-left: 20px;
-        }
         p#final {
             margin: auto;
             margin-top: 30px;
         }
     </style>
 </head>
-<body>
+<body id="teste">
     <div id="pagina">
         <h1>Minhas redes sociais</h1>
         <img src="Imagens/foto_120.png" alt="Minha foto">
@@ -46,18 +29,17 @@
     </div>
     <input type="button" value = "Dark Mode" id="DarkMode" onclick="clicar()">
     <input type="button" value="White Mode" id="whitekMode" onclick="clicarWM()">
-    <p id="final"><strong><a href="index.html" target="_self" rel="prev" style="color: black;"> &#x21E6 Página principal</a></strong></p>
+    <p id="final"><strong><a href="index.html" target="_self" rel="prev"> &#x21E6 Página principal</a></strong></p>
 
     <script>
-        var divblack = document.getElementById('pagina')
-        var divwhite = document.getElementById('pagina')
+        var teste = document.getElementById('teste')
         function clicar() {
-            divblack.style.background='black'
-            divblack.style.color='white'
+            teste.style.background='black'
+            teste.style.color='white'
         }
         function clicarWM() {
-            divblack.style.background = null
-            divblack.style.color = 'black'
+            teste.style.background = null
+            teste.style.color = 'black'
         }
     </script>
    

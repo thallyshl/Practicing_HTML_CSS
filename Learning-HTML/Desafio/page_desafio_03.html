@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_principal.css">
+    <link rel="stylesheet" href="style_03.css">
+    <title>Challenge 04</title>
+</head>
+<body id="all">
+
+    <div id="flex">
+        <div id="divleft" class="cadastro">
+            <h1>Cadastro</h1>
+            <form action="index.html" method="GET">
+                <input class="caixa" type="text" value="First name" name="name">
+                <input class="caixa" type="text" value="Last name" name="lastname"><br>
+                <input id="birthday" class="caixa" type="month" value="Birthday"><br>
+                <p id="paragraphcolor" class="caixa">Cor favorita: <input type="color" value="Favorite color" name="color"></p>
+                <input class="caixa" type="email" value="e-mail" name="email"><br>
+                <input class="caixa" type="password" value="Password" name="senha"><br>
+                <input id="cadastrar" class="caixa" type="submit" value="Cadastrar" name="cadastro">
+            </form>
+        </div>
+        <div id="divright" class="cadastro">
+            <img id="office" src="https://images.pexels.com/photos/225502/pexels-photo-225502.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="office image" onmouseenter="turnwhite()" onmouseout="turnblack()">
+        </div>
+        <div id="welcome" onmouseenter="turnwhite()" onmouseout="turnblack()">
+            <h1>Welcome!</h1>
+            <h2>Bem vindo!</h2>
+        </div>
+        
+    </div>
+    <div id="divfinal">
+        <input type="button" value="Dark mode" id="moded" onclick="clicar()">
+        <input type="button" value="White mode" id="modew" onclick="clicarWM()">
+        <p id="final3"><strong><a href="index.html" target="_self" rel="prev">&#x21E6 Pagina inicial</a></strong></p>
+    </div>
+    <script>
+        var welcome = document.getElementById('welcome')
+        var img = document.getElementById('office')
+        var teste = document.getElementById("all")
+        function turnwhite() {
+            welcome.style.color = 'white'
+            img.style.opacity = '100%'
+        }
+        function turnblack() {
+            welcome.style.color = 'black'
+            img.style.opacity ='0.2'
+        }
+        function clicar() {
+            teste.style.background='black'
+            teste.style.color='black'
+        }
+        function clicarWM() {
+            teste.style.background='aliceblue'
+            teste.style.color='black'
+        }
+
+    </script>
+</body>
+</html>

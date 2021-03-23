@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_principal.css">
+    <link rel="stylesheet" href="style_index.css">
     <title>Principal page.</title>
-    <style>
-        body {
-            margin-top: 50px;
-            background-color:aliceblue;
-            color: rgb(0, 0, 0);
-            font: normal 15pt Arial;
-            margin-left: 20px;
-            margin-right: 720px;
-        }
-        ul {
-            font-size: 20pt;
-            color: rgb(0, 0, 0);
-            line-height: 50px;
-        }
-    </style>
 </head>
-<body>
-    <div id='pagina'>
-        <h1>Acesse os desafios abaixo.</h1>
-        <p>Os desafios aqui demonstram o meu aprendizado até agora em <abbr title="Hypertext Markup language">HTML</abbr> e um pouco de <abbr title="Cascating style sheets">CSS</abbr>.</p>
-        <ul id = 'list'><strong>Desafios:</strong>
-            <li><a href="page_desafio_00.html" target="_self" rel="next">Desafio 01</a></li>
-            <li><a href="page_desafio_01.html" target="_self" rel="next">Desafio 02</a></li>
+<body id='teste'>
+    <div id='container'>
+        <div class="head">
+            <h1>Learning challenges</h1>
+        </div>
+        <table class="tabela" >
+            <thead>
+                <tr>
+                    <th>Challenge:</th>
+                    <th>Goal</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td class="desafio">
+                            <a href="page_desafio_00.html" target="_self" rel="next">Mundial map</a>
+                        </td>
+                        <td>Challenge for work with images in block</td>
+                    </tr>    
+                    <tr>
+                        <td class="desafio">
+                            <a href="page_desafio_01.html" target="_self" rel="next">Created my perfil</a>
+                        </td>
+                        <td>Challenge about created a perfil working links, abreviation and image manipulation</td>
+                    </tr>
+                    <tr>
+                        <td class="desafio">
+                            <a href="page_desafio_02.html" target="_self" rel="next">Uploding video</a>
+                        </td>
+                        <td>Challenge for training work with videos</td>
+                    </tr>
+                    <tr>
+                        <td class="desafio">
+                            <a href="page_desafio_03.html" target="_self" rel="next">Register page</a>
+                        </td>
+                        <td>Challenge for created a register screen</td>
+                    </tr>
+                    
+                </tbody>
+        </table>
+        <div class="paragraph">
+            <p>The challenges here demostrate my learning so far in <abbr title="Hypertext Markup language">HTML</abbr> and a little about <abbr title="Cascating style sheets">CSS</abbr>.</p>
+        </div>
+    </div>
+    <div class="mode">
         <input type="button" value="Dark Mode" id="DarkMode" onclick="clicar()">
         <input type="button" value="White Mode" id="whitekMode" onclick="clicarWM()">
-        </ul>
     </div>
 
     <script>
-        var divblack = document.getElementById('pagina')
-        var divwhite = document.getElementById('pagina')
+        var teste = document.getElementById('teste')
         var lista = document.getElementById('list')
         function clicar() {
-            divblack.style.background = 'black'
-            divblack.style.color = 'white'
+            teste.style.background = 'black'
+            teste.style.color = 'white'
             lista.style.color='white'
         }
         function clicarWM() {
-            divblack.style.background = null
-            divblack.style.color = 'black'
+            teste.style.background = null
+            teste.style.color = 'black'
             lista.style.color = ('black')
         }
     </script>

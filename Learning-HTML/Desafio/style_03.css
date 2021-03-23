@@ -1,0 +1,66 @@
+#flex {
+    position: absolute;
+}
+#divleft {
+    width: 37%;
+    padding-left: 30px;
+    background-color: white;
+    border-right: 0px;
+    margin-left: 8.33%;
+    float: left;
+    margin-top: 9%;
+    }
+#divright {
+    width: 45%;
+    float: left;
+    background-image: linear-gradient(to right, white, rgb(53, 53, 53));  
+    margin-right: 8.33%;   
+    margin-top: 9%;
+    }
+#welcome {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 20%;
+    left: 50%;
+    top: 25%;
+}
+.cadastro {
+    width: 550px;
+    height: 600px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+}
+.caixa {
+    background-color: rgba(233, 233, 233, 0.445);
+    width: 300px;
+    padding: 10px;
+    margin: 8px;
+    font: 18px normal arial;
+    border: 0.2px solid gray;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.363);
+}
+#cadastrar {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(128, 128, 128, 0.5);
+    width:300px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: black;
+}
+#office {
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    border-radius: 10px;
+    opacity: 0.2;
+}
+#divfinal {
+    position: absolute;
+    left: 9%;
+    bottom: -200px;
+}

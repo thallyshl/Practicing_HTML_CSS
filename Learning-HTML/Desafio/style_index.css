@@ -1,0 +1,68 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid gray;
+    margin: 25%;
+    background-color: rgb(255, 221, 29);
+    margin-top: 0;
+    border-radius: 35px;
+    flex-wrap: wrap;
+}
+.head {
+    position: relative;
+    transform: translatex(-50%);
+    left: 50%;
+    text-align: center;
+    font-size: 85%;
+    color: white;
+    background-color: black;
+    width: 40%;
+    height: 90px;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 10px;
+    top: 10px;
+}
+h1 {
+    padding: 5px;
+    margin: 5px;
+}
+.paragraph {
+    position: relative;
+    bottom: 20px;
+    font: normal 20px Arial;
+    margin-right: 5%;
+    margin-left: 5%;
+    line-height: 140%;
+}
+.mode {
+    position: relative;
+    margin-left: 26%;
+    margin-top: -24%;
+    height: auto;
+}
+.tabela {
+    width: 90%;
+    margin: 2%;
+    margin-left: 5%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 15pt;
+    color: rgb(0, 0, 0);
+    line-height: 50px;
+    background-color: rgba(240, 248, 255, 0.363);
+}
+td, th {
+    box-shadow: 1px 1px 2px black;
+    border: 1px solid black;
+}
+.desafio {
+    width: 30%;
+}
+a {
+    color: rgb(109, 0, 235);
+    text-decoration: none;
+}
